@@ -3,9 +3,10 @@ package pulley.main;
 public class DummyGuyMass {
     double weight;
 
-    public  DummyGuyMass(double value){
-        weight = value;
-        System.out.println("class was inited");
+    DummyGuyMass(double value){
+        this.weight = value;
+        String valueinfo = String.format("class was inited .Weight is %s", this.weight);
+        System.out.printf(valueinfo);
     }
 
     public static void main(String[] args){
