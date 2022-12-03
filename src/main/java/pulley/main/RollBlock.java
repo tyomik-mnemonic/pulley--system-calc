@@ -1,13 +1,11 @@
 package pulley.main;
-import pulley.main.DummyGuyMass;
 
 public class RollBlock {
-    DummyGuyMass mass;
+    double mass;
     int id;
-    double coef;
+    private double coef;
 
-    RollBlock(DummyGuyMass mass, int id){
-        this.mass = mass;
+    RollBlock(int id){
         this.id = id;
         this.coef = 0.5;
     }
@@ -17,7 +15,7 @@ public class RollBlock {
     }
 
     public double new_force(){
-        double result = this.mass.weight * this.coef;
+        double result = this.mass * this.coef;
         return result;
     }
 }
