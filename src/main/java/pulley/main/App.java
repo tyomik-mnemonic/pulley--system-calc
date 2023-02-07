@@ -8,8 +8,8 @@ public class App {
         RollBlock first = new RollBlock( 1);
         RollBlock[] rolls = new RollBlock[] {first};
 
-        PulleySystem pullespas = new PulleySystem(weight,rolls);
-        System.out.println(first.new_force());
-        System.out.println(pullespas.weight_object.weight);
+        PulleySystem pullespast = new PulleySystem(weight,rolls);
+        System.out.println("new force is: " + pullespast.newForce());
+        //System.out.println(pullespast.weight_object.weight);
     }
 }
